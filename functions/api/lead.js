@@ -92,7 +92,7 @@ export async function onRequest(context) {
     }
 
     // Browser form submit: redirect to thank-you
-    return Response.redirect(url.origin + "/thank-you/", 303);
+    return Response.redirect(url.origin + "/thanks/", 303);
   } catch (e) {
     return new Response(`Server error: ${e && e.message ? e.message : String(e)}`, {
       status: 500,
