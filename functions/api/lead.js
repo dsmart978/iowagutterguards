@@ -51,6 +51,7 @@ export async function onRequest(context) {
     }
 
     const subject = New IGG Lead: ;
+
     const lines = [
       Name: ,
       email ? Email:  : null,
@@ -85,7 +86,6 @@ export async function onRequest(context) {
       return new Response(Email send failed:  , { status: 502 });
     }
 
-    // Browser form submits should redirect
     return Response.redirect(url.origin + "/thank-you/", 303);
 
   } catch (e) {
