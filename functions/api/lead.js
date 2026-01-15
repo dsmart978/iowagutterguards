@@ -1,94 +1,107 @@
 export async function onRequestPost(context) {
-  const { request, env } = context;
-
-  // ---- Config (set these in Cloudflare Pages -> Settings -> Environment variables) ----
-  const RESEND_API_KEY = env.RESEND_API_KEY;
-  const RESEND_FROM    = env.RESEND_FROM;  // e.g. "Iowa Gutter Guards <leads@iowagutterguards.online>"
-  const LEAD_TO        = env.LEAD_TO;      // e.g. "you@yourdomain.com"
-
-  if (!RESEND_API_KEY || !RESEND_FROM || !LEAD_TO) {
-    return new Response("Server misconfigured: missing RESEND_API_KEY / RESEND_FROM / LEAD_TO", { status: 500 });
-  }
-
-  // ---- Only accept form posts ----
-  const ct = request.headers.get("content-type") || "";
-  let data = {};
   try {
+    const req = context.request;
+    const url = new URL(req.url);
+
+    // ---- Parse form data (works for both browser <form> POST and fetch) ----
+    const ct = (req.headers.get("content-type") || "").toLowerCase();
+    let data = {};
     if (ct.includes("application/x-www-form-urlencoded") || ct.includes("multipart/form-data")) {
-      const fd = await request.formData();
-      for (const [k, v] of fd.entries()) {
-        // If multiple values, join them
-        if (data[k] === undefined) data[k] = v;
-        else data[k] = Array.isArray(data[k]) ? data[k].concat([v]) : [data[k], v];
-      }
+      const fd = await req.formData();
+      for (const [k, v] of fd.entries()) data[k] = String(v ?? "").trim();
     } else if (ct.includes("application/json")) {
-      data = await request.json();
+      data = await req.json();
+      for (const k of Object.keys(data)) data[k] = String(data[k] ?? "").trim();
     } else {
-      // Try anyway
-      const fd = await request.formData();
-      for (const [k, v] of fd.entries()) data[k] = v;
+      // Last-resort: try formData anyway
+      const fd = await req.formData();
+      for (const [k, v] of fd.entries()) data[k] = String(v ?? "").trim();
     }
+
+    // ---- Honeypot (spam bots fill it, humans don't) ----
+    if ((data.website || "").length > 0) {
+      return new Response("", { status: 204 });
+    }
+
+    const name  = (data.name || data.fullname || data.full_name || "").trim();
+    const email = (data.email || "").trim();
+    const phone = (data.phone || data.tel || data.telephone || "").trim();
+    const city  = (data.city || "").trim();
+    const message = (data.message || data.notes || "").trim();
+
+    // Basic validation: require at least name + (phone or email)
+    if (!name || (!phone && !email)) {
+      return new Response("Missing required fields.", { status: 400 });
+    }
+
+    // ---- Env vars (set these in Cloudflare Pages > Settings > Variables and Secrets) ----
+    const RESEND_API_KEY = context.env.RESEND_API_KEY;
+    const LEAD_TO = context.env.LEAD_TO;
+    const LEAD_FROM = context.env.LEAD_FROM;
+
+    if (!RESEND_API_KEY || !LEAD_TO || !LEAD_FROM) {
+      return new Response("Server not configured (missing RESEND_API_KEY / LEAD_TO / LEAD_FROM).", { status: 500 });
+    }
+
+    const subject = New IGG Lead: ;
+    const lines = [
+      Name: ,
+      email ? Email:  : null,
+      phone ? Phone:  : null,
+      city ? City Page:  : null,
+      message ? Message:  : null,
+      Source: ,
+      IP: ,
+      UA: 
+    ].filter(Boolean);
+
+    const textBody = lines.join("\n");
+    const htmlBody = <pre style="white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,monospace"></pre>;
+
+    // ---- Send via Resend ----
+    const r = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": Bearer ,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        from: LEAD_FROM,
+        to: [LEAD_TO],
+        subject,
+        html: htmlBody,
+        reply_to: email || undefined
+      })
+    });
+
+    if (!r.ok) {
+      const err = await r.text().catch(() => "");
+      return new Response(Email send failed:  , { status: 502 });
+    }
+
+    // ---- Return redirect for normal form posts ----
+    const accept = (req.headers.get("accept") || "").toLowerCase();
+    const wantsHtml = accept.includes("text/html") || accept.includes("*/*");
+
+    if (wantsHtml) {
+      return Response.redirect(url.origin + "/thank-you/", 303);
+    }
+
+    return new Response(JSON.stringify({ ok: true }), {
+      status: 200,
+      headers: { "Content-Type": "application/json; charset=utf-8" }
+    });
+
   } catch (e) {
-    return new Response("Bad request: unable to parse form data", { status: 400 });
+    return new Response(Server error: , { status: 500 });
   }
+}
 
-  // ---- Basic spam trap (optional hidden field named "website") ----
-  if (typeof data.website === "string" && data.website.trim() !== "") {
-    // Quietly pretend success
-    return Response.redirect(new URL("/thank-you/", request.url).toString(), 303);
-  }
-
-  // ---- Normalize likely field names ----
-  const name  = (data.name || data.fullname || data.full_name || "").toString().trim();
-  const email = (data.email || "").toString().trim();
-  const phone = (data.phone || data.tel || data.telephone || "").toString().trim();
-  const city  = (data.city || "").toString().trim();
-  const msg   = (data.message || data.notes || data.details || "").toString().trim();
-
-  // ---- Minimal validation ----
-  if (!phone && !email) {
-    return new Response("Please provide at least a phone number or email.", { status: 400 });
-  }
-
-  const referer = request.headers.get("Referer") || "";
-  const ip = request.headers.get("CF-Connecting-IP") || "";
-  const ua = request.headers.get("User-Agent") || "";
-
-  const subject = [IGG Lead] ;
-
-  const lines = [
-    Name: ,
-    Email: ,
-    Phone: ,
-    City: ,
-    Message: ,
-    "",
-    Page: ,
-    IP: ,
-    UA: 
-  ];
-
-  const text = lines.join("\n");
-
-  // ---- Send email via Resend REST API ----
-  const resp = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      "Authorization": Bearer ,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      from: RESEND_FROM,
-      to: [LEAD_TO],
-      subject,
-      text
-    })
-  });
-
-  if (!resp.ok) {
-    const body = await resp.text().catch(() => "");
-    return new Response(Email send failed (). , { status: 502 });
-  }
-
-  return Response.redirect(new URL("/thank-you/", request.url).toString(), 303);
+function escapeHtml(s) {
+  return String(s)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
