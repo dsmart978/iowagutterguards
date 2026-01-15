@@ -1,6 +1,4 @@
-export async function onRequest(context) {
-  const { request, env } = context;
-
+export async function onRequest({ request, env }) {
   // Only allow POST
   if (request.method !== "POST") {
     return new Response("Method Not Allowed", {
@@ -9,92 +7,106 @@ export async function onRequest(context) {
     });
   }
 
-  // Parse form data (supports x-www-form-urlencoded and multipart/form-data)
+  // Helper: normalize keys like "Home size" -> "homesiz", "Phone Number" -> "phonenumber"
+  const normKey = (k) =>
+    String(k || "")
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "");
+
+  // Read body (supports form posts + JSON)
+  let raw = {};
   const ct = request.headers.get("content-type") || "";
-  let data = {};
 
   try {
-    if (ct.includes("application/x-www-form-urlencoded") || ct.includes("multipart/form-data")) {
-      const fd = await request.formData();
-      for (const [k, v] of fd.entries()) data[k] = String(v);
-    } else if (ct.includes("application/json")) {
-      data = await request.json();
+    if (ct.includes("application/json")) {
+      raw = (await request.json()) || {};
     } else {
-      // Last-resort attempt
       const fd = await request.formData();
-      for (const [k, v] of fd.entries()) data[k] = String(v);
+      raw = Object.fromEntries(fd.entries());
     }
   } catch (e) {
-    return new Response("Bad Request: could not parse form submission.", { status: 400 });
+    return new Response("Bad Request: unable to parse body", { status: 400 });
   }
 
-  // Honeypot: if filled, pretend success (spam-bot)
-  const honeypot = (data.website || "").trim();
-  if (honeypot) {
-    return Response.redirect(new URL("/thanks/", request.url).toString(), 303);
+  // Build a normalized lookup map
+  const norm = {};
+  for (const [k, v] of Object.entries(raw)) {
+    norm[normKey(k)] = String(v ?? "").trim();
   }
 
-  const name = (data.name || "").trim();
-  const email = (data.email || "").trim();
-  const phone = (data.phone || "").trim();
-  const city = (data.city || "").trim();
-  const message = (data.message || "").trim();
-
-  // Basic required fields (tweak as you like)
-  if (!name || (!phone && !email) || !message) {
-    return new Response("Missing required fields.", { status: 400 });
+  // Honeypot: any "website" field filled => pretend success, no email, redirect.
+  const websiteTrap =
+    norm.website || norm.web || norm.url || norm.yourwebsite || norm.companywebsite || "";
+  if (websiteTrap) {
+    return Response.redirect("/thanks/", 303);
   }
 
-  // Pull env vars
-  const apiKey = env.RESEND_API_KEY;
-  const leadTo = (env.LEAD_TO || "").trim();
-  const leadFromRaw = (env.LEAD_FROM || "").trim();
+  // Accept multiple possible field names from your form
+  const pick = (...keys) => {
+    for (const k of keys) {
+      const v = norm[normKey(k)];
+      if (v) return v;
+    }
+    return "";
+  };
 
-  // Validate env vars (DO NOT print secrets)
-  const missing = [];
-  if (!apiKey) missing.push("RESEND_API_KEY");
-  if (!leadTo) missing.push("LEAD_TO");
-  if (!leadFromRaw) missing.push("LEAD_FROM");
+  const name = pick("name", "fullname", "yourname");
+  const email = pick("email", "emailaddress");
+  const phone = pick("phone", "phonenumber", "mobile", "cell");
+  const city  = pick("city", "town");
+  const address = pick("address", "streetaddress");
+  const notes = pick("message", "notes", "details", "projectdetails");
 
-  if (missing.length) {
+  // Minimum viable lead: name + (email or phone)
+  if (!name || (!email && !phone)) {
+    return new Response("Missing required fields.", {
+      status: 400,
+      headers: { "Content-Type": "text/plain; charset=utf-8" },
+    });
+  }
+
+  // Compose email text: include EVERYTHING submitted (except honeypot)
+  const lines = [];
+  const sortedKeys = Object.keys(raw).sort((a, b) => a.localeCompare(b));
+  for (const k of sortedKeys) {
+    const nk = normKey(k);
+    if (nk === "website" || nk === "url" || nk === "yourwebsite" || nk === "companywebsite") continue;
+    const v = String(raw[k] ?? "").trim();
+    if (!v) continue;
+    lines.push(`${k}: ${v}`);
+  }
+
+  // Fall back if the above somehow ends up empty
+  if (lines.length === 0) {
+    lines.push(`Name: ${name}`);
+    if (email) lines.push(`Email: ${email}`);
+    if (phone) lines.push(`Phone: ${phone}`);
+    if (city) lines.push(`City: ${city}`);
+    if (address) lines.push(`Address: ${address}`);
+    if (notes) lines.push(`Notes: ${notes}`);
+  }
+
+  const subject = `New IGG Lead: ${name}${city ? ` (${city})` : ""}`;
+
+  // Env sanity
+  const apiKey = (env.RESEND_API_KEY || "").trim();
+  const from = (env.LEAD_FROM || "").trim();
+  const to = (env.LEAD_TO || "").trim();
+
+  if (!apiKey || !from || !to) {
     return new Response(
-      `Server misconfigured: missing ${missing.join(", ")}.`,
-      { status: 500 }
+      `Server not configured. Missing env vars:\n` +
+      `RESEND_API_KEY=${apiKey ? "set" : "MISSING"}\n` +
+      `LEAD_FROM=${from ? "set" : "MISSING"}\n` +
+      `LEAD_TO=${to ? "set" : "MISSING"}\n`,
+      { status: 500, headers: { "Content-Type": "text/plain; charset=utf-8" } }
     );
   }
 
-  // Resend wants a proper From header. If you stored only an email, wrap it.
-  const leadFrom = leadFromRaw.includes("<")
-    ? leadFromRaw
-    : `Iowa Gutter Guards <${leadFromRaw}>`;
-
-  const subject = `New IGG Lead: ${name}${city ? " (" + city + ")" : ""}`;
-
-  const lines = [
-    `Name: ${name}`,
-    `Email: ${email || "(none)"}`,
-    `Phone: ${phone || "(none)"}`,
-    `City: ${city || "(none)"}`,
-    "",
-    "Message:",
-    message,
-    "",
-    "----",
-    `Submitted: ${new Date().toISOString()}`,
-    `IP: ${request.headers.get("cf-connecting-ip") || "(unknown)"}`,
-    `UA: ${request.headers.get("user-agent") || "(unknown)"}`,
-  ];
-
-  const payload = {
-    from: leadFrom,
-    to: leadTo,
-    subject,
-    text: lines.join("\n"),
-    reply_to: email || undefined,
-  };
-
-  // Send via Resend
-  let resendResp, resendBodyText;
+  // Send email via Resend
+  let resendResp;
+  let resendText = "";
   try {
     resendResp = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -102,22 +114,30 @@ export async function onRequest(context) {
         "Authorization": `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(payload),
+      body: JSON.stringify({
+        from,
+        to: [to],
+        subject,
+        text: lines.join("\n"),
+        reply_to: email || undefined,
+      }),
     });
 
-    resendBodyText = await resendResp.text();
+    resendText = await resendResp.text();
   } catch (e) {
-    return new Response(`Resend request failed: ${String(e)}`, { status: 502 });
+    return new Response(`Resend request failed: ${String(e)}`, {
+      status: 502,
+      headers: { "Content-Type": "text/plain; charset=utf-8" },
+    });
   }
 
   if (!resendResp.ok) {
-    // This is the money shot: you will finally SEE why it failed.
     return new Response(
-      `Resend error (${resendResp.status}): ${resendBodyText}`,
-      { status: 502 }
+      `Resend error (${resendResp.status} ${resendResp.statusText}):\n${resendText}`,
+      { status: 502, headers: { "Content-Type": "text/plain; charset=utf-8" } }
     );
   }
 
-  // Success: redirect to thanks page
-  return Response.redirect(new URL("/thanks/", request.url).toString(), 303);
+  // Success -> redirect to static thank-you page
+  return Response.redirect("/thanks/", 303);
 }
