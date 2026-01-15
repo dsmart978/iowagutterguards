@@ -1,110 +1,123 @@
 export async function onRequest(context) {
-  const req = context.request;
+  const { request, env } = context;
 
   // Only allow POST
-  if (req.method !== "POST") {
+  if (request.method !== "POST") {
     return new Response("Method Not Allowed", {
       status: 405,
       headers: { "Allow": "POST" },
     });
   }
 
+  // Parse form data (supports x-www-form-urlencoded and multipart/form-data)
+  const ct = request.headers.get("content-type") || "";
+  let data = {};
+
   try {
-    const url = new URL(req.url);
-
-    // --- Parse body (form post or JSON) ---
-    const ct = (req.headers.get("content-type") || "").toLowerCase();
-    const data = {};
-
-    if (ct.includes("application/json")) {
-      const j = await req.json().catch(() => ({}));
-      for (const [k, v] of Object.entries(j || {})) data[k] = String(v ?? "").trim();
+    if (ct.includes("application/x-www-form-urlencoded") || ct.includes("multipart/form-data")) {
+      const fd = await request.formData();
+      for (const [k, v] of fd.entries()) data[k] = String(v);
+    } else if (ct.includes("application/json")) {
+      data = await request.json();
     } else {
-      // Works for application/x-www-form-urlencoded and multipart/form-data
-      const fd = await req.formData();
-      for (const [k, v] of fd.entries()) data[k] = String(v ?? "").trim();
+      // Last-resort attempt
+      const fd = await request.formData();
+      for (const [k, v] of fd.entries()) data[k] = String(v);
     }
+  } catch (e) {
+    return new Response("Bad Request: could not parse form submission.", { status: 400 });
+  }
 
-    // --- Honeypot ---
-    if ((data.website || "").length > 0) {
-      // Pretend success, drop spam
-      return new Response("", { status: 204 });
-    }
+  // Honeypot: if filled, pretend success (spam-bot)
+  const honeypot = (data.website || "").trim();
+  if (honeypot) {
+    return Response.redirect(new URL("/thanks/", request.url).toString(), 303);
+  }
 
-    const name = (data.name || data.fullname || data.full_name || "").trim();
-    const email = (data.email || "").trim();
-    const phone = (data.phone || data.tel || data.telephone || "").trim();
-    const city = (data.city || "").trim();
-    const message = (data.message || data.notes || "").trim();
+  const name = (data.name || "").trim();
+  const email = (data.email || "").trim();
+  const phone = (data.phone || "").trim();
+  const city = (data.city || "").trim();
+  const message = (data.message || "").trim();
 
-    // Require at least name + (phone or email)
-    if (!name || (!phone && !email)) {
-      return new Response("Missing required fields.", { status: 400 });
-    }
+  // Basic required fields (tweak as you like)
+  if (!name || (!phone && !email) || !message) {
+    return new Response("Missing required fields.", { status: 400 });
+  }
 
-    // --- Required env vars (set in Pages > Settings > Variables and Secrets) ---
-    const RESEND_API_KEY = context.env.RESEND_API_KEY;
-    const LEAD_TO = context.env.LEAD_TO;
-    const LEAD_FROM = context.env.LEAD_FROM;
+  // Pull env vars
+  const apiKey = env.RESEND_API_KEY;
+  const leadTo = (env.LEAD_TO || "").trim();
+  const leadFromRaw = (env.LEAD_FROM || "").trim();
 
-    if (!RESEND_API_KEY || !LEAD_TO || !LEAD_FROM) {
-      return new Response(
-        "Server not configured (missing RESEND_API_KEY / LEAD_TO / LEAD_FROM).",
-        { status: 500 }
-      );
-    }
+  // Validate env vars (DO NOT print secrets)
+  const missing = [];
+  if (!apiKey) missing.push("RESEND_API_KEY");
+  if (!leadTo) missing.push("LEAD_TO");
+  if (!leadFromRaw) missing.push("LEAD_FROM");
 
-    const subject = `New IGG Lead${city ? " - " + city : ""}: ${name}`;
+  if (missing.length) {
+    return new Response(
+      `Server misconfigured: missing ${missing.join(", ")}.`,
+      { status: 500 }
+    );
+  }
 
-    const lines = [
-      `Name: ${name}`,
-      email ? `Email: ${email}` : null,
-      phone ? `Phone: ${phone}` : null,
-      city ? `City Page: ${city}` : null,
-      message ? `Message: ${message}` : null,
-      `Page: ${url.origin}${url.pathname}`,
-      `IP: ${(req.headers.get("cf-connecting-ip") || "").trim()}`,
-      `UA: ${(req.headers.get("user-agent") || "").trim()}`,
-    ].filter(Boolean);
+  // Resend wants a proper From header. If you stored only an email, wrap it.
+  const leadFrom = leadFromRaw.includes("<")
+    ? leadFromRaw
+    : `Iowa Gutter Guards <${leadFromRaw}>`;
 
-    const textBody = lines.join("\n");
-    const htmlBody = `<pre style="white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,monospace">${escapeHtml(textBody)}</pre>`;
+  const subject = `New IGG Lead: ${name}${city ? " (" + city + ")" : ""}`;
 
-    // --- Send via Resend ---
-    const r = await fetch("https://api.resend.com/emails", {
+  const lines = [
+    `Name: ${name}`,
+    `Email: ${email || "(none)"}`,
+    `Phone: ${phone || "(none)"}`,
+    `City: ${city || "(none)"}`,
+    "",
+    "Message:",
+    message,
+    "",
+    "----",
+    `Submitted: ${new Date().toISOString()}`,
+    `IP: ${request.headers.get("cf-connecting-ip") || "(unknown)"}`,
+    `UA: ${request.headers.get("user-agent") || "(unknown)"}`,
+  ];
+
+  const payload = {
+    from: leadFrom,
+    to: leadTo,
+    subject,
+    text: lines.join("\n"),
+    reply_to: email || undefined,
+  };
+
+  // Send via Resend
+  let resendResp, resendBodyText;
+  try {
+    resendResp = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${RESEND_API_KEY}`,
+        "Authorization": `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        from: LEAD_FROM,
-        to: [LEAD_TO],
-        subject,
-        html: htmlBody,
-        reply_to: email || undefined,
-      }),
+      body: JSON.stringify(payload),
     });
 
-    if (!r.ok) {
-      const err = await r.text().catch(() => "");
-      return new Response(`Email send failed: ${r.status} ${err}`, { status: 502 });
-    }
-
-    // Browser form submit: redirect to thank-you
-    return Response.redirect(url.origin + "/thanks/", 303);
+    resendBodyText = await resendResp.text();
   } catch (e) {
-    return new Response(`Server error: ${e && e.message ? e.message : String(e)}`, {
-      status: 500,
-    });
+    return new Response(`Resend request failed: ${String(e)}`, { status: 502 });
   }
-}
 
-function escapeHtml(s) {
-  return String(s)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
+  if (!resendResp.ok) {
+    // This is the money shot: you will finally SEE why it failed.
+    return new Response(
+      `Resend error (${resendResp.status}): ${resendBodyText}`,
+      { status: 502 }
+    );
+  }
+
+  // Success: redirect to thanks page
+  return Response.redirect(new URL("/thanks/", request.url).toString(), 303);
 }
