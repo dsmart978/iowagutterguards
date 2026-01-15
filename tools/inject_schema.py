@@ -8,7 +8,6 @@ from html import unescape
 ROOT = Path(".").resolve()
 DOMAIN = "https://iowagutterguards.online"
 
-# Brand/entity (no address because you don't want GBP yet and we won't invent one)
 BUSINESS_NAME = "Iowa Gutter Guards"
 BUSINESS_URL  = DOMAIN + "/"
 BUSINESS_EMAIL = "info@iowagutterguards.online"
@@ -35,7 +34,6 @@ def page_url_from_path(p: Path) -> str:
     return DOMAIN + "/" + rel
 
 def detect_city_from_path(p: Path) -> str | None:
-    # service-areas/des-moines-ia/index.html -> Des Moines
     parts = p.relative_to(ROOT).parts
     if len(parts) >= 3 and parts[0] == "service-areas" and parts[-1] == "index.html":
         slug = parts[1].lower()
@@ -60,10 +58,6 @@ def extract_meta_description(html: str) -> str | None:
     return None
 
 def extract_faq_from_details(html: str) -> list[dict]:
-    """
-    Extract visible FAQs from <details><summary>Question</summary>Answer...</details>
-    This keeps us compliant: schema only for content users can see.
-    """
     faqs = []
     for m in re.finditer(
         r"<details\\b[^>]*>\\s*<summary\\b[^>]*>(.*?)</summary>(.*?)</details>",
@@ -92,17 +86,16 @@ def build_graph(html: str, path: Path) -> list[dict]:
     desc = extract_meta_description(html)
     city = detect_city_from_path(path)
 
-    org_id = BUSINESS_URL + "#business"
+    business_id = BUSINESS_URL + "#business"
     site_id = BUSINESS_URL + "#website"
     page_id = url + "#webpage"
     service_id = BUSINESS_URL + "#service-gutter-guards"
 
     graph: list[dict] = []
 
-    # Use LocalBusiness as primary entity (better fit than generic Organization)
-    business = {
+    graph.append({
         "@type": "LocalBusiness",
-        "@id": org_id,
+        "@id": business_id,
         "name": BUSINESS_NAME,
         "url": BUSINESS_URL,
         "email": BUSINESS_EMAIL,
@@ -114,17 +107,15 @@ def build_graph(html: str, path: Path) -> list[dict]:
             "areaServed": "US",
             "availableLanguage": ["en"]
         }]
-    }
-    graph.append(business)
+    })
 
-    website = {
+    graph.append({
         "@type": "WebSite",
         "@id": site_id,
         "url": BUSINESS_URL,
         "name": BUSINESS_NAME,
-        "publisher": {"@id": org_id}
-    }
-    graph.append(website)
+        "publisher": {"@id": business_id}
+    })
 
     webpage = {
         "@type": "WebPage",
@@ -132,7 +123,7 @@ def build_graph(html: str, path: Path) -> list[dict]:
         "url": url,
         "name": title,
         "isPartOf": {"@id": site_id},
-        "about": {"@id": org_id}
+        "about": {"@id": business_id}
     }
     if desc:
         webpage["description"] = desc
@@ -143,11 +134,10 @@ def build_graph(html: str, path: Path) -> list[dict]:
         "@id": service_id,
         "name": "Gutter Guard Installation",
         "serviceType": "Gutter guard installation",
-        "provider": {"@id": org_id},
+        "provider": {"@id": business_id},
         "url": url
     }
 
-    # City pages get explicit areaServed
     if city:
         service["areaServed"] = {
             "@type": "City",
@@ -171,7 +161,6 @@ def build_graph(html: str, path: Path) -> list[dict]:
 
     graph.append(service)
 
-    # FAQ schema only if we can detect visible FAQs
     faqs = extract_faq_from_details(html)
     if faqs:
         graph.append({
@@ -187,22 +176,23 @@ def inject_schema(html: str, graph: list[dict]) -> str:
     jsonld = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     block = f'<script id="schema-ld" type="application/ld+json">{jsonld}</script>'
 
-    # Replace existing schema block if present
     pat = r'<script\\s+id=["\\\']schema-ld["\\\']\\s+type=["\\\']application/ld\\+json["\\\']\\s*>.*?</script>'
     if re.search(pat, html, flags=re.I|re.S):
         return re.sub(pat, block, html, flags=re.I|re.S, count=1)
 
-    # Otherwise insert before </head>
     if re.search(r"</head>", html, flags=re.I):
         return re.sub(r"</head>", block + "\\n</head>", html, flags=re.I, count=1)
 
-    # Fallback insert
     if re.search(r"</body>", html, flags=re.I):
         return re.sub(r"</body>", block + "\\n</body>", html, flags=re.I, count=1)
 
     return html + "\\n" + block + "\\n"
 
-# Collect pages: root *.html + all */index.html
+def write_text_lf(path: Path, text: str) -> None:
+    # Force LF newlines on disk without relying on pathlib newline handling.
+    text = text.replace("\\r\\n", "\\n").replace("\\r", "\\n")
+    path.write_bytes(text.encode("utf-8"))
+
 targets = []
 targets += list(ROOT.glob("*.html"))
 targets += list(ROOT.glob("**/index.html"))
@@ -222,7 +212,7 @@ for p in sorted(set(targets)):
     new_html = inject_schema(html, graph)
 
     if new_html != html:
-        p.write_text(new_html, encoding="utf-8", newline="\\n")
+        write_text_lf(p, new_html)
         updated += 1
 
 print(f"OK: scanned {scanned} pages; updated {updated} pages with JSON-LD (LocalBusiness/WebSite/WebPage/Service + FAQPage when visible).")
