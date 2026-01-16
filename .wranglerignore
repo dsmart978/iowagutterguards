@@ -1,0 +1,8 @@
+# Cloudflare Pages / Wrangler deploy ignore
+# Keep internal tooling + templates out of production.
+
+tools/
+data/
+city-template.html
+inject_schema.py
+*.ps1
