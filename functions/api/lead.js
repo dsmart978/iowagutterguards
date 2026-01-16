@@ -1,18 +1,80 @@
-/* functions/api/lead.js
-   Cloudflare Pages Function: /api/lead
-   - Accepts form-encoded, multipart, or JSON submissions
-   - Sends lead email via Resend
-   - Redirects browser submissions to /thanks/ (303)
-   - Returns JSON for API callers (Accept: application/json)
-   - Never throws uncaught exceptions (prevents CF 1101)
-*/
+export async function onRequest(context) {
+  const { request, env } = context;
 
-function pickFirst(obj, keys) {
-  for (const k of keys) {
-    const v = obj[k];
-    if (typeof v === "string" && v.trim() !== "") return v.trim();
+  // Only POST is supported (forms submit POST)
+  if (request.method !== "POST") {
+    return new Response("Method Not Allowed", {
+      status: 405,
+      headers: { "Allow": "POST", "content-type": "text/plain; charset=utf-8" },
+    });
   }
-  return "";
+
+  const wantsJson = looksLikeJsonAccept(request);
+
+  try {
+    // ---- Parse incoming body ----
+    const ct = contentType(request);
+    let data = {};
+
+    if (ct.includes("application/json")) {
+      data = await request.json();
+      data = normalizeObjectStrings(data);
+    } else {
+      // Works for x-www-form-urlencoded and multipart/form-data
+      const fd = await request.formData();
+      data = toPlainObjectFromFormData(fd);
+    }
+
+    const lead = normalizeLeadFields(data);
+
+    // Honeypot: bots fill it, humans don't
+    if (lead.website) {
+      console.log("Honeypot hit. Dropping.");
+      return wantsJson
+        ? json(200, { ok: true, dropped: "honeypot" })
+        : redirect303("/thanks/");
+    }
+
+    // Validation: require name + (email OR phone)
+    if (!lead.name || (!lead.email && !lead.phone)) {
+      const err = "Missing required fields: name and (email or phone).";
+      return wantsJson ? json(400, { ok: false, error: err }) : text(400, err);
+    }
+
+    // Build email body
+    const emailText = buildEmailText(lead);
+
+    console.log("Lead received:", {
+      name: lead.name,
+      email: lead.email || null,
+      phone: lead.phone || null,
+      city: lead.city || null,
+      extrasCount: Object.keys(lead.extras || {}).length,
+    });
+
+    // Send email via Resend
+    const sent = await sendResendEmail({ env, lead, text: emailText });
+
+    if (!sent.ok) {
+      console.error("Resend failed:", sent.error);
+      return wantsJson
+        ? json(sent.status, { ok: false, error: sent.error, detail: sent.detail || null })
+        : text(sent.status, sent.error);
+    }
+
+    // Success
+    return wantsJson
+      ? json(200, { ok: true, resend: sent.data })
+      : redirect303("/thanks/");
+
+  } catch (err) {
+    // No more mystery 1101 crashes without context
+    const msg = err && typeof err.message === "string" ? err.message : String(err);
+    console.error("Unhandled error in /api/lead:", msg);
+    return wantsJson
+      ? json(500, { ok: false, error: "Internal error", detail: msg })
+      : text(500, "Internal error: " + msg);
+  }
 }
 
 function looksLikeJsonAccept(request) {
@@ -24,28 +86,55 @@ function contentType(request) {
   return (request.headers.get("content-type") || "").toLowerCase();
 }
 
-function toPlainObjectFromFormData(fd) {
+function normalizeObjectStrings(obj) {
   const out = {};
-  for (const [k, v] of fd.entries()) {
-    out[k] = typeof v === "string" ? v : "[file]";
+  for (const [k, v] of Object.entries(obj || {})) {
+    out[k] = typeof v === "string" ? v.trim() : v;
   }
   return out;
 }
 
+function toPlainObjectFromFormData(fd) {
+  const out = {};
+  for (const [k, v] of fd.entries()) {
+    out[k] = typeof v === "string" ? v.trim() : "[file]";
+  }
+  return out;
+}
+
+function pickFirst(obj, keys) {
+  for (const k of keys) {
+    const v = obj[k];
+    if (typeof v === "string" && v.trim() !== "") return v.trim();
+  }
+  return "";
+}
+
 function normalizeLeadFields(data) {
-  const name = pickFirst(data, ["name", "Name", "full_name", "FullName"]);
-  const email = pickFirst(data, ["email", "Email"]);
+  // Your site sends Title Case names (Name/Email/Phone/Notes/etc)
+  const name = pickFirst(data, ["name", "Name", "full_name", "FullName", "Full Name"]);
+  const email = pickFirst(data, ["email", "Email", "e-mail", "E-mail"]);
   const phone = pickFirst(data, ["phone", "Phone", "tel", "Tel", "telephone", "Telephone"]);
   const city = pickFirst(data, ["city", "City", "town", "Town"]);
   const message = pickFirst(data, ["message", "Message", "notes", "Notes", "note", "Note"]);
 
+  // Honeypot
   const website = pickFirst(data, ["website", "Website", "url", "URL"]);
 
+  // Everything else, preserved as extras (so you can see what the form actually sent)
   const extras = {};
-  for (const [k, v] of Object.entries(data)) {
+  const ignore = new Set([
+    "name","Name","full_name","FullName","Full Name",
+    "email","Email","e-mail","E-mail",
+    "phone","Phone","tel","Tel","telephone","Telephone",
+    "city","City","town","Town",
+    "message","Message","notes","Notes","note","Note",
+    "website","Website","url","URL",
+  ]);
+
+  for (const [k, v] of Object.entries(data || {})) {
     const key = String(k);
-    if (["website", "Website"].includes(key)) continue;
-    if (["name","Name","email","Email","phone","Phone","tel","Tel","telephone","Telephone","city","City","message","Message","notes","Notes"].includes(key)) continue;
+    if (ignore.has(key)) continue;
     if (typeof v === "string" && v.trim() !== "") extras[key] = v.trim();
   }
 
@@ -55,8 +144,8 @@ function normalizeLeadFields(data) {
 function buildEmailText(lead) {
   const lines = [];
   lines.push(`Name: ${lead.name || "-"}`);
-  lines.push(`Email: ${lead.email || "-"}`);
-  lines.push(`Phone: ${lead.phone || "-"}`);
+  if (lead.email) lines.push(`Email: ${lead.email}`);
+  if (lead.phone) lines.push(`Phone: ${lead.phone}`);
   if (lead.city) lines.push(`City: ${lead.city}`);
   if (lead.message) lines.push(`Notes: ${lead.message}`);
 
@@ -64,7 +153,9 @@ function buildEmailText(lead) {
   if (extraKeys.length) {
     lines.push("");
     lines.push("Extra fields:");
-    for (const k of extraKeys.sort()) lines.push(`${k}: ${lead.extras[k]}`);
+    for (const k of extraKeys.sort()) {
+      lines.push(`${k}: ${lead.extras[k]}`);
+    }
   }
   return lines.join("\n");
 }
@@ -85,22 +176,34 @@ async function sendResendEmail({ env, lead, text }) {
     subject: `New IGG Lead: ${lead.name || "New Lead"}${subjectCity}`,
     text,
   };
+
+  // Reply-to should be the lead, if provided
   if (lead.email) payload.reply_to = lead.email;
 
   const resp = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${RESEND_API_KEY}`,
+      "Authorization": `Bearer ${RESEND_API_KEY}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify(payload),
   });
 
   const bodyText = await resp.text().catch(() => "");
+  let bodyJson = null;
+  try { bodyJson = bodyText ? JSON.parse(bodyText) : null; } catch {}
+
   if (!resp.ok) {
-    return { ok: false, status: 502, error: `Resend error (${resp.status}): ${bodyText || "(empty response)"}` };
+    return {
+      ok: false,
+      status: 502,
+      error: `Resend error (${resp.status})`,
+      detail: bodyText || "(empty response)",
+    };
   }
-  return { ok: true, status: 200, data: bodyText };
+
+  // Return parsed JSON if possible (usually includes id), else raw text
+  return { ok: true, status: 200, data: bodyJson || bodyText || { ok: true } };
 }
 
 function json(status, obj) {
@@ -124,75 +227,5 @@ function text(status, body) {
 }
 
 function redirect303(location) {
-  return new Response(null, { status: 303, headers: { Location: location } });
-}
-
-export async function onRequest(context) {
-  const request = context.request;
-  const env = context.env;
-
-  if (request.method === "GET" || request.method === "HEAD") {
-    return text(405, "Method Not Allowed. POST a lead to /api/lead.");
-  }
-  if (request.method !== "POST") {
-    return text(405, "Method Not Allowed.");
-  }
-
-  const wantsJson = looksLikeJsonAccept(request);
-
-  try {
-    const ct = contentType(request);
-    let data = {};
-
-    if (ct.includes("application/json")) {
-      data = await request.json();
-    } else if (ct.includes("application/x-www-form-urlencoded") || ct.includes("multipart/form-data")) {
-      const fd = await request.formData();
-      data = toPlainObjectFromFormData(fd);
-    } else {
-      try {
-        const fd = await request.formData();
-        data = toPlainObjectFromFormData(fd);
-      } catch (e) {
-        return wantsJson ? json(400, { ok: false, error: "Unsupported Content-Type" }) : text(400, "Unsupported Content-Type");
-      }
-    }
-
-    const lead = normalizeLeadFields(data);
-
-    if (lead.website) {
-      console.log("Honeypot hit, dropping lead.");
-      return wantsJson ? json(200, { ok: true }) : redirect303("/thanks/");
-    }
-
-    if (!lead.name || (!lead.email && !lead.phone)) {
-      const err = "Missing required fields: name and (email or phone).";
-      return wantsJson ? json(400, { ok: false, error: err }) : text(400, err);
-    }
-
-    const emailText = buildEmailText(lead);
-
-    console.log("Lead received:", {
-      name: lead.name,
-      email: lead.email || null,
-      phone: lead.phone || null,
-      city: lead.city || null,
-      extrasCount: Object.keys(lead.extras || {}).length,
-    });
-
-    const sent = await sendResendEmail({ env, lead, text: emailText });
-
-    if (!sent.ok) {
-      console.error("Resend failed:", sent.error);
-      return wantsJson ? json(sent.status, { ok: false, error: sent.error }) : text(sent.status, sent.error);
-    }
-
-    return wantsJson ? json(200, { ok: true }) : redirect303("/thanks/");
-  } catch (err) {
-    const msg = err && err.message ? err.message : String(err);
-    console.error("Unhandled error in /api/lead:", msg, err);
-    return wantsJson
-      ? json(500, { ok: false, error: "Internal error", detail: msg })
-      : text(500, `Internal error: ${msg}`);
-  }
+  return new Response(null, { status: 303, headers: { "Location": location } });
 }
