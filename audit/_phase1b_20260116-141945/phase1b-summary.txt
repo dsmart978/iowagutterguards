@@ -1,0 +1,7 @@
+Files scanned: 57
+Files with any hit: 50
+Files w/ generic sentence: 50
+Files w/ Let's Text: 0
+Files w/ BOTH: 0
+CSV: C:\Users\don_s\Desktop\Iowa Gutter Guards Site\audit\_phase1b_20260116-141945\phase1b-fingerprint.csv
+TXT: C:\Users\don_s\Desktop\Iowa Gutter Guards Site\audit\_phase1b_20260116-141945\phase1b-context.txt

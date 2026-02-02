@@ -1,0 +1,2640 @@
+=== Generated: 2026-01-16T14:14:48.1539452-06:00 ===
+
+----- FILE: customer-service/index.html -----
+
+HasGenericSentence: False
+
+HasLetsText       : True
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Service | Iowa Gutter Guards</title>
+<link rel="stylesheet" href="/styles.css">
+<script id="schema-ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://iowagutterguards.online/#business","name":"Iowa Gutter Guards","url":"https://iowagutterguards.online/","email":"info@iowagutterguards.online","telephone":"+1-515-329-5128","contactPoint":[{"@type":"ContactPoint","telephone":"+1-515-329-5128","contactType":"sales","areaServed":"US","availableLanguage":["en"]}]},{"@type":"WebSite","@id":"https://iowagutterguards.online/#website","url":"https://iowaguttergu
+
+
+
+----- FILE: index.html -----
+
+HasGenericSentence: False
+
+HasLetsText       : True
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iowa Gutter Guards | Gutter Guards in Central Iowa</title>
+  <meta name="description" content="Iowa Gutter Guards installs premium gutter protection on homes across Central Iowa communities like Ankeny, Altoona, Waukee, and more. Keep your gutters clean, protect your home, and stop climbing ladders." />
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+     
+
+
+
+----- FILE: privacy-policy/index.html -----
+
+HasGenericSentence: False
+
+HasLetsText       : True
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy | Iowa Gutter Guards</title>
+<link rel="stylesheet" href="/styles.css">
+<script id="schema-ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://iowagutterguards.online/#business","name":"Iowa Gutter Guards","url":"https://iowagutterguards.online/","email":"info@iowagutterguards.online","telephone":"+1-515-329-5128","contactPoint":[{"@type":"ContactPoint","telephone":"+1-515-329-5128","contactType":"sales","areaServed":"US","availableLanguage":["en"]}]},{"@type":"WebSite","@id":"https://iowagutterguards.online/#website","url":"https://iowagutt
+
+
+
+----- FILE: service-areas/adel-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Adel, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="guard
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Adel, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Adel, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+    
+
+
+
+----- FILE: service-areas/altoona-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Altoona, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gu
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Altoona, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Altoona, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+----- FILE: service-areas/ames-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Ames, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="guard
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Ames, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Ames, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+    
+
+
+
+----- FILE: service-areas/ankeny-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Ankeny, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Ankeny, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Ankeny, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/baxter-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Baxter, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Baxter, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Baxter, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/belle-plaine-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Belle Plaine, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" i
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Belle Plaine, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Belle Plaine, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px
+
+
+
+----- FILE: service-areas/bondurant-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Bondurant, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Bondurant, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Bondurant, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/boone-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Boone, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="guar
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Boone, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Boone, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+  
+
+
+
+----- FILE: service-areas/carlisle-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Carlisle, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="g
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Carlisle, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Carlisle, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+----- FILE: service-areas/chariton-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Chariton, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="g
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Chariton, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Chariton, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+----- FILE: service-areas/clive-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Clive, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="guar
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Clive, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Clive, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+  
+
+
+
+----- FILE: service-areas/colfax-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Colfax, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Colfax, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Colfax, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/corydon-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Corydon, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gu
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Corydon, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Corydon, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+----- FILE: service-areas/dallas-center-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Dallas Center, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" 
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Dallas Center, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Dallas Center, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10
+
+
+
+----- FILE: service-areas/des-moines-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Des Moines, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id=
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Des Moines, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Des Moines, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+ 
+
+
+
+----- FILE: service-areas/earlham-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Earlham, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gu
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Earlham, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Earlham, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+----- FILE: service-areas/eldora-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Eldora, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Eldora, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Eldora, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/greenfield-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Greenfield, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id=
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Greenfield, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Greenfield, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+ 
+
+
+
+----- FILE: service-areas/grimes-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Grimes, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Grimes, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Grimes, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/grinnell-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Grinnell, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="g
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Grinnell, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Grinnell, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+----- FILE: service-areas/huxley-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Huxley, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Huxley, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Huxley, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/indianola-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Indianola, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Indianola, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Indianola, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/jefferson-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Jefferson, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Jefferson, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Jefferson, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/johnston-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Johnston, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="g
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Johnston, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Johnston, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+----- FILE: service-areas/knoxville-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Knoxville, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Knoxville, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Knoxville, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/lynnville-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Lynnville, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Lynnville, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Lynnville, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/madrid-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Madrid, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Madrid, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Madrid, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/marshalltown-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Marshalltown, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" i
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Marshalltown, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Marshalltown, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px
+
+
+
+----- FILE: service-areas/melbourne-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Melbourne, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Melbourne, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Melbourne, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/monroe-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Monroe, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Monroe, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Monroe, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/nevada-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Nevada, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Nevada, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Nevada, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/newton-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Newton, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Newton, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Newton, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/norwalk-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Norwalk, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gu
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Norwalk, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Norwalk, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+----- FILE: service-areas/osceola-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Osceola, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gu
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Osceola, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Osceola, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+----- FILE: service-areas/oskaloosa-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Oskaloosa, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Oskaloosa, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Oskaloosa, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/pella-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Pella, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="guar
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Pella, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Pella, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+  
+
+
+
+----- FILE: service-areas/perry-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Perry, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="guar
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Perry, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Perry, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+  
+
+
+
+----- FILE: service-areas/pleasant-hill-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Pleasant Hill, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" 
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Pleasant Hill, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Pleasant Hill, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10
+
+
+
+----- FILE: service-areas/polk-city-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Polk City, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Polk City, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Polk City, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/prairie-city-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Prairie City, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" i
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Prairie City, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Prairie City, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px
+
+
+
+----- FILE: service-areas/redfield-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Redfield, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="g
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Redfield, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Redfield, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+----- FILE: service-areas/slater-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Slater, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Slater, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Slater, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/story-city-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Story City, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id=
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Story City, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Story City, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+ 
+
+
+
+----- FILE: service-areas/stuart-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Stuart, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Stuart, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Stuart, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/sully-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Sully, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="guar
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Sully, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Sully, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+  
+
+
+
+----- FILE: service-areas/urbandale-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Urbandale, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Urbandale, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Urbandale, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/van-meter-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Van Meter, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Van Meter, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Van Meter, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: service-areas/waukee-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Waukee, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="gua
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Waukee, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Waukee, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+
+
+
+
+----- FILE: service-areas/west-des-moines-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves West Des Moines, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in West Des Moines, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in West Des Moines, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius
+
+
+
+----- FILE: service-areas/winterset-ia/index.html -----
+
+HasGenericSentence: True
+
+HasLetsText       : True
+
+
+[Generic sentence context]
+   </div>
+          </form>
+        </aside>
+      </section>
+<section class="city-intro" style="max-width: 1100px; margin: 0 auto; padding: 18px 16px;">
+  <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Iowa Gutter Guards serves Winterset, Iowa</strong> with professionally installed, premium gutter guard systems designed to stop clogs, reduce overflow, and keep water moving where it belongs.
+      Get a fast online quote, then we’ll confirm details and schedule your install.
+    </p>
+  </div>
+</section>
+
+
+      <section class="section" id="
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutter Guards in Winterset, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in Winterset, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #eab308;
+      --cta: #f97316;
+      --cta-dark: #ea580c;
+      --bg: #0b1120;
+      --light: #f9fafb;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius: 10px;
+   
+
+
+
+----- FILE: terms-of-service/index.html -----
+
+HasGenericSentence: False
+
+HasLetsText       : True
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Terms of Service | Iowa Gutter Guards</title>
+<link rel="stylesheet" href="/styles.css">
+<script id="schema-ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://iowagutterguards.online/#business","name":"Iowa Gutter Guards","url":"https://iowagutterguards.online/","email":"info@iowagutterguards.online","telephone":"+1-515-329-5128","contactPoint":[{"@type":"ContactPoint","telephone":"+1-515-329-5128","contactType":"sales","areaServed":"US","availableLanguage":["en"]}]},{"@type":"WebSite","@id":"https://iowagutterguards.online/#website","url":"https://iowagu
+
+
+
+----- FILE: thank-you/index.html -----
+
+HasGenericSentence: False
+
+HasLetsText       : True
+
+
+[Let's Text context]
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thanks - Iowa Gutter Guards</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; padding: 32px; max-width: 700px; margin: 0 auto; }
+    a { color: inherit; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 18px 20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Request received</h1>
+    <p>We got your info. If you provided a phone number, we’ll reach out soon to confirm details and schedule.</p>
+    <p><a h
+
+
+
+----- FILE: thanks/index.html -----
+
+HasGenericSentence: False
+
+HasLetsText       : True
+
+
+[Let's Text context]
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You | Iowa Gutter Guards</title>
+  <meta name="robots" content="noindex,follow" />
+<script id="schema-ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://iowagutterguards.online/#business","name":"Iowa Gutter Guards","url":"https://iowagutterguards.online/","email":"info@iowagutterguards.online","telephone":"+1-515-329-5128","contactPoint":[{"@type":"ContactPoint","telephone":"+1-515-329-5128","contactType":"sales","areaServed":"US","availableLanguage":["en"]}]},{"@type":"WebSit
+
+
+
+----- FILE: warranty/index.html -----
+
+HasGenericSentence: False
+
+HasLetsText       : True
+
+
+[Let's Text context]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Workmanship Warranty | Iowa Gutter Guards</title>
+<link rel="stylesheet" href="/styles.css">
+<script id="schema-ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://iowagutterguards.online/#business","name":"Iowa Gutter Guards","url":"https://iowagutterguards.online/","email":"info@iowagutterguards.online","telephone":"+1-515-329-5128","contactPoint":[{"@type":"ContactPoint","telephone":"+1-515-329-5128","contactType":"sales","areaServed":"US","availableLanguage":["en"]}]},{"@type":"WebSite","@id":"https://iowagutterguards.online/#website","url":"https://io
+
+
+
