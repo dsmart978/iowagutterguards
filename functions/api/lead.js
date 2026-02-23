@@ -177,7 +177,7 @@ export async function onRequest(context) {
     // Honeypot hit: pretend success, do nothing.
     if (lead.website) {
       console.log("Honeypot hit, dropping lead.");
-      return wantsJson ? json(200, { ok: true }) : redirect303("/thanks/");
+      return wantsJson ? json(200, { ok: true }) : redirect303("/thank-you/");
     }
 
     // Validation: require name + (email OR phone)
@@ -206,7 +206,7 @@ export async function onRequest(context) {
     const resendId = sent.data && typeof sent.data === "object" ? sent.data.id : null;
     if (resendId) console.log("Resend id:", resendId);
 
-    return wantsJson ? json(200, { ok: true }) : redirect303("/thanks/");
+    return wantsJson ? json(200, { ok: true }) : redirect303("/thank-you/");
   } catch (err) {
     const msg = err && typeof err.message === "string" ? err.message : String(err);
     console.error("Unhandled error in /api/lead:", msg, err);

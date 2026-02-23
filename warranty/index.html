@@ -2,9 +2,230 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msvalidate.01" content="de33b1b0324d427cbf3df33ce570686b" />
 <title>Workmanship Warranty | Iowa Gutter Guards</title>
 <link rel="stylesheet" href="/styles.css">
 <script id="schema-ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://iowagutterguards.online/#business","name":"Iowa Gutter Guards","url":"https://iowagutterguards.online/","email":"info@iowagutterguards.online","telephone":"+1-515-329-5128","contactPoint":[{"@type":"ContactPoint","telephone":"+1-515-329-5128","contactType":"sales","areaServed":"US","availableLanguage":["en"]}]},{"@type":"WebSite","@id":"https://iowagutterguards.online/#website","url":"https://iowagutterguards.online/","name":"Iowa Gutter Guards","publisher":{"@id":"https://iowagutterguards.online/#business"}},{"@type":"WebPage","@id":"https://iowagutterguards.online/warranty/#webpage","url":"https://iowagutterguards.online/warranty/","name":"Workmanship Warranty | Iowa Gutter Guards","description":"","about":{"@id":"https://iowagutterguards.online/#business"},"isPartOf":{"@id":"https://iowagutterguards.online/#website"}}]}</script>
+
+  <style>
+
+  /* Sticky Phone Bar for Mobile */
+  .sticky-phone {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    padding: 0.85rem 1rem;
+    z-index: 9999;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+  }
+  .sticky-phone a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-decoration: none;
+  }
+  .sticky-phone svg {
+    width: 24px;
+    height: 24px;
+    animation: phone-ring 1.5s ease-in-out infinite;
+  }
+  @keyframes phone-ring {
+    0%, 100% { transform: rotate(0); }
+    10%, 30% { transform: rotate(-10deg); }
+    20%, 40% { transform: rotate(10deg); }
+    50% { transform: rotate(0); }
+  }
+  @media (max-width: 768px) {
+    .sticky-phone { display: block; }
+    body { padding-bottom: 60px; }
+  }
+
+  /* Trust Badges Section */
+  .trust-badges-section {
+    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.3);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  }
+  .trust-badges-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+  .trust-badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .trust-badge-icon {
+    font-size: 2rem;
+  }
+  .trust-badge-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+  .trust-badge-text strong {
+    font-size: 1.1rem;
+    color: #4ade80;
+  }
+  .trust-badge-text span {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  @media (max-width: 768px) {
+    .trust-badges-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  /* Exit Intent Popup */
+  .exit-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .exit-popup.hidden { display: none !important; }
+  .exit-popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+  }
+  .exit-popup-content {
+    position: relative;
+    background: #0f172a;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  }
+  .exit-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .exit-popup h3 {
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  .exit-popup p {
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+  }
+
+  /* Why Choose Us Section */
+  .why-choose-section {
+    padding: 2.5rem 0;
+    margin: 2rem 0;
+  }
+  .why-choose-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+  }
+  .why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  .why-choose-item {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .why-choose-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .why-choose-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .why-choose-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #4ade80;
+  }
+  .why-choose-item p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  @media (max-width: 900px) {
+    .why-choose-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .why-choose-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Before/After Section */
+  .before-after-section {
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+  .before-after-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+  }
+  .before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .before-after-item {
+    position: relative;
+  }
+  .before-after-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #dc2626;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .before-after-label.after {
+    background: #16a34a;
+  }
+  @media (max-width: 600px) {
+    .before-after-grid { grid-template-columns: 1fr; }
+  }
+  </style>
 </head>
 <body>
 <div class="page">
@@ -38,6 +259,27 @@ Phone: (515) 329-5128</p>
 <a href="/warranty/">Warranty</a> &middot;
 <a href="/customer-service/">Customer Service</a></p>
 </footer>
+</div>
+
+<!-- Sticky Phone Bar (Mobile) -->
+<div class="sticky-phone" onclick="gtag('event', 'phone_click', {'event_category': 'engagement', 'event_label': 'sticky_bar'});">
+  <a href="tel:+15153295128" data-track="phone-click" data-track="phone-click" onclick="gtag(\'event\', \'phone_click\', {\'event_category\': \'engagement\'});">
+    <svg xmlns="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/phone-outline-icon.svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+    </svg>
+    <span>Call Now: (515) 329-5128</span>
+  </a>
+</div>
+
+<!-- Exit Intent Popup (Placeholder - Enable via JS) -->
+<div id="exit-popup" class="exit-popup hidden" style="display:none;">
+  <div class="exit-popup-overlay"></div>
+  <div class="exit-popup-content">
+    <button class="exit-popup-close" aria-label="Close">&times;</button>
+    <h3>Wait! Don't leave yet...</h3>
+    <p>Get a free gutter inspection and estimate before you go!</p>
+    <a href="#estimate-form" class="btn-primary" onclick="closeExitPopup()">Get Free Estimate</a>
+  </div>
 </div>
 </body>
 </html>

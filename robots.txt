@@ -1,3 +1,17 @@
+# Iowa Gutter Guards - Robots.txt
+# https://www.iowagutterguards.com
+
 User-agent: *
-Disallow:
-Sitemap: https://iowagutterguards.online/sitemap.xml
+Allow: /
+
+# Disallow admin/function paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /.wrangler/
+Disallow: /functions/
+
+# Sitemap location
+Sitemap: https://www.iowagutterguards.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

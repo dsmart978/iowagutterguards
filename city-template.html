@@ -1,1 +1,326 @@
-\n<script id="schema-ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://iowagutterguards.online/#business","name":"Iowa Gutter Guards","url":"https://iowagutterguards.online/","email":"info@iowagutterguards.online","telephone":"+1-515-329-5128","contactPoint":[{"@type":"ContactPoint","telephone":"+1-515-329-5128","contactType":"sales","areaServed":"US","availableLanguage":["en"]}]},{"@type":"WebSite","@id":"https://iowagutterguards.online/#website","url":"https://iowagutterguards.online/","name":"Iowa Gutter Guards","publisher":{"@id":"https://iowagutterguards.online/#business"}},{"@type":"WebPage","@id":"https://iowagutterguards.online/city-template.html#webpage","url":"https://iowagutterguards.online/city-template.html","name":"Iowa Gutter Guards","isPartOf":{"@id":"https://iowagutterguards.online/#website"},"about":{"@id":"https://iowagutterguards.online/#business"}},{"@type":"Service","@id":"https://iowagutterguards.online/#service-gutter-guards","name":"Gutter Guard Installation","serviceType":"Gutter guard installation","provider":{"@id":"https://iowagutterguards.online/#business"},"url":"https://iowagutterguards.online/city-template.html","areaServed":{"@type":"AdministrativeArea","name":"Central Iowa","address":{"@type":"PostalAddress","addressRegion":"IA","addressCountry":"US"}}}]}</script>\n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="../../assets/css/styles.min.css">
+
+  <!-- Favicons -->
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.iowagutterguards.com/service-areas/{{CITY_SLUG}}/">
+  <meta property="og:title" content="Gutter Guards in {{CITY_NAME}}, IA | Iowa Gutter Guards">
+  <meta property="og:description" content="Professional gutter guard installation in {{CITY_NAME}}, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <meta property="og:image" content="https://i.ytimg.com/vi/4uvdiZSedx0/maxresdefault.jpg">
+  <meta property="og:site_name" content="Iowa Gutter Guards">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.iowagutterguards.com/service-areas/{{CITY_SLUG}}/">
+  <meta name="twitter:title" content="Gutter Guards in {{CITY_NAME}}, IA | Iowa Gutter Guards">
+  <meta name="twitter:description" content="Professional gutter guard installation in {{CITY_NAME}}, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  <meta name="twitter:image" content="https://www.jbroofingiowa.com/wp-content/uploads/2024/05/5141651098.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.iowagutterguards.com/service-areas/{{CITY_SLUG}}/">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <!-- Event Tracking -->
+  <script src="../../assets/js/tracking.js" defer></script>
+
+  <title>Gutter Guards in {{CITY_NAME}}, IA | Iowa Gutter Guards</title>
+  <meta name="description" content="Professional gutter guard installation in {{CITY_NAME}}, Iowa. Stop clogs, reduce overflow, and protect your home. Get a fast online quote from Iowa Gutter Guards.">
+  
+  <script id="schema-ld" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.iowagutterguards.com/#business",
+        "name": "Iowa Gutter Guards",
+        "url": "https://www.iowagutterguards.com/",
+        "telephone": "+1-515-329-5128",
+        "areaServed": {
+          "@type": "City",
+          "name": "{{CITY_NAME}}",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "{{CITY_NAME}}",
+            "addressRegion": "IA",
+            "addressCountry": "US"
+          }
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Gutter Guard Installation in {{CITY_NAME}}",
+        "serviceType": "Gutter guard installation",
+        "provider": {"@id": "https://www.iowagutterguards.com/#business"},
+        "areaServed": {
+          "@type": "City",
+          "name": "{{CITY_NAME}}"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Sticky Phone Bar for Mobile */
+    .sticky-phone {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+      padding: 0.85rem 1rem;
+      z-index: 9999;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    }
+    .sticky-phone a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      color: white;
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .sticky-phone { display: block; }
+      body { padding-bottom: 60px; }
+    }
+    
+    /* Trust Badges */
+    .trust-badges-section {
+      padding: 1.5rem 0;
+      margin: 1.5rem 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.3);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+    }
+    .trust-badges-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+    .trust-badge-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .trust-badge-icon { font-size: 2rem; }
+    .trust-badge-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.3;
+    }
+    .trust-badge-text strong {
+      font-size: 1.1rem;
+      color: #4ade80;
+    }
+    .trust-badge-text span {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    @media (max-width: 768px) {
+      .trust-badges-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a href="/" class="logo">
+        <div class="logo-mark">IGG</div>
+        <div class="logo-text">
+          <span class="logo-primary">Iowa</span>
+          <span class="logo-secondary">Gutter Guards</span>
+        </div>
+      </a>
+      <div class="header-contact">
+        <a href="tel:+15153295128" class="header-phone" data-track="phone-click">
+          <strong>(515) 329-5128</strong>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="eyebrow">📍 Serving {{CITY_NAME}}, IA</div>
+          <h1>Professional <span>Gutter Guards</span> in {{CITY_NAME}}</h1>
+          <p class="hero-lede">
+            Iowa Gutter Guards provides expert gutter protection installation for homes in {{CITY_NAME}} and nearby communities including {{NEARBY_TOWNS}}. Stop climbing ladders and protect your home from water damage.
+          </p>
+          <div class="hero-badges">
+            <span class="badge">✓ Free Estimates</span>
+            <span class="badge">✓ Lifetime Warranty</span>
+            <span class="badge">✓ Local Iowa Company</span>
+          </div>
+          <div class="hero-cta-row">
+            <a href="#estimate-form" class="btn-primary">🎯 Get Your FREE Estimate</a>
+            <span style="color: #6b7280; font-size: 0.9rem;">
+              or call <a href="tel:+15153295128" style="color: #4ade80;" data-track="phone-click">(515) 329-5128</a>
+            </span>
+          </div>
+        </div>
+        <aside class="hero-right" id="estimate-form">
+          <h2>Get a Free Quote for {{CITY_NAME}}</h2>
+          <p>Fill out this quick form and we'll get back to you within 24 hours.</p>
+          <form method="POST" action="/api/lead" accept-charset="UTF-8">
+            <input type="hidden" name="city" value="{{CITY_NAME}}, IA">
+            <input type="hidden" name="website" value="">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="Name" required placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="Phone" required placeholder="(515) 555-1234">
+            </div>
+            <div class="form-group">
+              <label for="email">Email (Optional)</label>
+              <input type="email" id="email" name="Email" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="notes">Tell us about your home</label>
+              <textarea id="notes" name="Notes" rows="3" placeholder="Number of stories, approximate gutter footage, any issues you've noticed..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-block">Request Free Estimate</button>
+          </form>
+        </aside>
+      </section>
+
+      <!-- Trust Badges -->
+      <section class="trust-badges-section">
+        <div class="trust-badges-grid">
+          <div class="trust-badge-item">
+            <div class="trust-badge-icon">🏆</div>
+            <div class="trust-badge-text">
+              <strong>10+ Years</strong>
+              <span>Serving Iowa</span>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="trust-badge-icon">🏠</div>
+            <div class="trust-badge-text">
+              <strong>1,000+</strong>
+              <span>Homes Protected</span>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="trust-badge-icon">⭐</div>
+            <div class="trust-badge-text">
+              <strong>4.9/5 Rating</strong>
+              <span>Customer Reviews</span>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="trust-badge-icon">✅</div>
+            <div class="trust-badge-text">
+              <strong>Lifetime</strong>
+              <span>Transferable Warranty</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section">
+        <h2>Gutter Services in {{CITY_NAME}}</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>🛡️ Gutter Guard Installation</h3>
+            <p>Premium micro-mesh guards that keep leaves, debris, and pests out while allowing water to flow freely.</p>
+          </div>
+          <div class="service-card">
+            <h3>🔧 Gutter Tune-Up</h3>
+            <p>We ensure your gutters are properly pitched, secured, and draining correctly before installation.</p>
+          </div>
+          <div class="service-card">
+            <h3>🧹 Gutter Cleaning</h3>
+            <p>Professional cleaning to prepare your gutters for guard installation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Section -->
+      <section class="why-choose-section">
+        <h2>Why {{CITY_NAME}} Homeowners Choose Us</h2>
+        <ul class="benefits-list">
+          <li><strong>Local expertise:</strong> We understand {{CITY_NAME}}'s weather patterns and the unique challenges Iowa homes face.</li>
+          <li><strong>Quality materials:</strong> Stainless steel micro-mesh with aluminum frame built to last.</li>
+          <li><strong>Professional installation:</strong> Our trained installers ensure proper fit and function.</li>
+          <li><strong>Transparent pricing:</strong> Clear quotes with no hidden fees or surprise charges.</li>
+          <li><strong>Lifetime warranty:</strong> Transferable protection for as long as you own your home.</li>
+        </ul>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <h2>Ready to Protect Your {{CITY_NAME}} Home?</h2>
+        <p>Get a free, no-obligation estimate for gutter guard installation. We'll assess your home and provide transparent pricing.</p>
+        <div class="cta-buttons">
+          <a href="#estimate-form" class="btn-primary">Get Free Estimate</a>
+          <a href="tel:+15153295128" class="btn-secondary" data-track="phone-click">Call (515) 329-5128</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-mark">IGG</div>
+          <p>Iowa Gutter Guards<br>Serving Central Iowa</p>
+        </div>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/warranty/">Warranty</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+        </div>
+        <div class="footer-contact">
+          <p><strong>Call or Text:</strong> <a href="tel:+15153295128">(515) 329-5128</a></p>
+          <p>Monday–Friday, 8am–6pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Iowa Gutter Guards. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Sticky Phone Bar (Mobile) -->
+  <div class="sticky-phone">
+    <a href="tel:+15153295128" data-track="phone-click">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+      </svg>
+      <span>Call Now: (515) 329-5128</span>
+    </a>
+  </div>
+</body>
+</html>
